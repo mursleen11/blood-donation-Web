@@ -1,0 +1,1643 @@
+/* App.css */
+
+.form{
+  text-align: center;
+}
+/* h1 { 
+	text-align: center; 
+	color: #EA062B; 
+}  */
+
+fieldset { 
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border: 10px solid rgb(245, 112, 97);
+} 
+.App_inputform {
+	text-align: center;
+    width: 100%;
+	height: 672px;
+	background-color: #EA062B;
+	position: relative; 
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.App_inputform::before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #7f0404ab;
+    z-index: -1;
+}
+.App_inputform h1{
+	color: #EA062B;
+}
+
+input { 
+	padding: .3rem; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	
+} 
+
+label { 
+	margin: 10px; 
+} 
+
+button {
+	padding: 14px 41px; 
+	font-size: 20px;
+	color: #fff;
+	background-color: #EA062B; 
+	border: 2px solid #ccc;  
+} 
+
+button:hover{
+  background-color: #fff;
+  border-color: #EA062B;
+  color: #EA062B;
+}
+.actionButton{
+	padding: 2px 2px;
+}
+.imagefile{
+	width: 188px !important;
+}
+.details{
+	width: 300px;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.details-2{
+	margin: 40px;
+}
+.email{
+  width: 230px;
+  padding: 12px 14px;
+}
+.name{
+  width: 100px;
+  padding: 12px 10px;
+}
+.password{
+	width: 230px;
+	padding: 12px 14px;
+}
+#select{
+  margin-left: 10px;
+  padding: 5px 0;
+  width: 230px;
+}
+
+.logo{
+	width: 100px;
+	height: 75px;
+}
+.footer-logo{
+	width: 200px;
+	height: 200px;
+}
+/* Inside Login form */
+
+/* body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+.title {
+	text-align: center;
+	background-color: rgb(190, 164, 214);
+    color: #EA062B;
+    padding: 10px;
+	border-radius: 10px 10px 0 0;
+	font-size: 25px;
+    font-weight: 700;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.login_form{
+	height: 666px;
+	padding-top: 6px;/* 
+	background-image: url(image/photo-1617396900799-f4ec2b43c7ae.avif); */
+	background-color: #EA062B;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.login_form::before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.pri_log{
+	width: 350px;
+	height: 580px;
+	background-color: #fff;
+	box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
+}
+
+.lginput {
+	border: 1px solid rgb(172, 171, 171);
+	border-radius: 24px;
+	width: 270px;
+	padding: 15px;
+	outline: none;
+	margin: 5px;
+}
+.lgbtn{
+	width: 300px;
+	border-radius: 4px;
+    background-color: #EA062B;
+    color: #fff;
+    font-size: large;
+}
+.lgbtn:hover{
+  border-color: #EA062B;
+  background-color: #fff;
+  color: #EA062B;
+}
+.donation-img2{
+	width: 300px;
+
+}
+
+/******    is se opr jo styling ki hoi hai vo form ki hoi hai     *******/
+
+/*******************      Home  Page Start      *****************/
+  
+/* *************       NAVBAR     ************** */
+
+
+
+.header{
+	display: inline-block;
+	color: #EA062B;
+	width: 100%;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 20px 20px 0 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #EA062B;
+	font-weight: 400;
+}
+nav ul li a:hover{
+    color: black;
+}
+nav{
+	padding-right: 30px;
+	float: right;
+}
+.logo{
+	padding-left: 30px;
+	margin: 0;
+	float: left;
+} 
+.menu-toggle {
+	display: none; /* Hide toggle button by default */
+	cursor: pointer;
+  }
+  .bar {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	margin: 5px 0;
+	transition: 0.4s;
+  }
+  .nav {
+	display: flex;
+	justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+	.menu-toggle {
+	  display: block;
+	  float: right;
+	  padding: 30px 20px 0 0;
+	}
+  
+	.nav {
+	  flex-direction: column;
+	  align-items: center;
+	  top: 100%;
+	  left: 0;
+	  background-color: #f9f9f9;
+	  width: 100%;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+  
+	.nav.open {
+	  max-height: 200px; 
+	}
+  
+	ul {
+	  margin-top: 10px; 
+	}
+  
+	li {
+	  display: block;
+	  margin: 10px 0;
+	}
+  
+	.logout {
+	  margin-top: 10px;
+	}
+}
+
+.sectwo{
+	width: 100%;
+	height: 300px;
+	background-image: url(image/home_1_slider_1.webp);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.inpt1{
+	padding: 15px;
+	width: 200px;
+	margin-right: 20px;
+	border-radius: 8px;
+}
+.line{
+	margin-bottom: 7px;
+	width: 350px;
+	height: 3px;
+	background-color: #fff;
+}
+.btn1{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 500;
+	width: 150px;
+	padding: 10px;
+}
+
+
+.logout{
+	float: right;
+	padding: 9px 20px;
+	border-radius: 25px;
+	margin-top: 7px;
+}
+
+
+
+
+.Effect {
+	--c:linear-gradient(#000 0 0); /* update the color here */
+	
+	padding-bottom: .15em;
+	background: var(--c), var(--c);
+	background-size: .3em .1em;
+	background-position:50% 100%;
+	background-repeat: no-repeat;
+	transition: .3s linear, background-size .3s .2s linear;
+  }
+  .Effect:hover {
+	background-size: 40% .1em;
+	background-position: 10% 100%, 90% 100%;
+  }
+  [class] {
+	vertical-align: middle;
+	font-family: sans-serif;
+	cursor: pointer;
+  }
+
+
+/******************     Banner        ****************/
+
+
+
+
+
+.banner{
+	height: 600px;
+	background-image: url("./image/home_1_slider_1.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 200px;
+}
+.banner h1{
+	margin: 0;
+}
+.btn2{
+    padding: 12px 15px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #EA062B;
+	border: none;
+	margin-right: 10px;
+}
+
+
+
+/* Register Now    and     Donate Now   wala paragraph */
+
+.register1{
+	width: 80%;
+	display: flex;
+	position: relative;
+	bottom: 80px;
+	left: 180px;
+}
+.register1 p{
+	margin: 0;
+}
+.register_now{
+	display: flex;
+	gap: 30px;
+	padding: 20px;
+	background-color: #EA062B;
+	color: #fff;
+}
+.donate_now{
+	display: flex;
+	gap: 22px;
+	padding: 20px;
+	background-color: black;
+	color: #fff;
+}
+.icon_reg img{
+	width: 35px;
+	height: 35px;
+	padding-top: 50px;
+}
+.register_now img{
+	width: 35px;
+	height: 35px;
+	margin-top: 50px;
+}
+.donate_now img{
+	width: 35px;
+	height: 35px;
+	margin-top: 50px;
+}
+
+
+
+
+/**************            DONATION PROCESS        *************/
+
+.don_process{
+	display: flex;
+}
+.donation-img{
+	width: 360px;
+	height: 280px;
+}
+.donation-process{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+	color: #444444;
+	font-size: 20px;
+}
+
+
+
+
+
+/**************   JOIN WITH US AND SAVE LIFE   ************/
+
+
+
+.secfour{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	font-size: 20px;
+	background-image: url("./image/testimony_feat_bg.webp");
+	color: #fff;
+	padding: 20px 0;
+}
+
+
+
+
+
+
+/**************     DONAOR OPINION       ************/
+.secfive{
+	background-color: #fff;
+	position: relative;
+	bottom: 250px;
+	width: 75%;
+	margin: auto;
+	box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
+	display: flex;
+}
+.test_donar{
+	padding: 200px 100px;
+}
+.test_donar h1{
+	color: #EA062B;
+	padding-bottom: 20px;
+}
+.sunny{
+	padding-top: 20px;
+}
+.img_test{
+	width: 585px;
+	height: 695px;
+}
+
+
+/******************    Gallery     *******************/
+
+.gallery{
+	padding: 10px 0;
+	background-color: #EA062B;
+	text-align: center;
+	color: #fff;
+}
+.img_gallery{
+	width: 24%;
+	height: 290px;
+	padding: 2px;
+}
+
+
+/*************    Become A Part Of Great Work Today   ************/   
+
+
+
+.secthree{
+	background-color: #F8F9FA;
+	padding: 30px;
+}
+.become-para{
+	width: 80%;
+	height: 350px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
+}
+.become-para p{
+	padding: 0 70px;
+}
+
+
+
+
+
+/****************      CAMPAIGN SPONSORS     ***************/
+
+.img_test2{
+	width: 245px;
+	height: 160px;
+}
+.campaign{
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+.iner_campaign{
+	width: 20%;
+	float: left;
+}
+.iner_campaign2{
+	float: right;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+/*************    Let's change the world    ***************/
+
+
+
+.we_six{
+	width: 100%;
+	height: 300px;
+	background-color: #EA062B;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 70px;
+}
+.we_six h2{
+	font-size: 45px;
+}
+
+
+
+
+
+
+
+/*********************      Footer        ****************/
+
+.footer{
+	background-color: #1f1f1f;
+}
+.main_footer{
+	        width: 80%;
+			color: #fff;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 230px;
+			gap: 5px;
+}
+.main_footer a{
+	text-decoration: none;
+	color: #fff;
+}
+.main_footer a:hover{
+	color: #EA062B;
+}
+.contn p:hover{
+	color: #EA062B;
+}
+.para_fotr{
+	padding-right: 20px;
+}
+.box11{
+	padding: 14px 10px;
+}
+
+.footer_copy{
+	color: #fff;
+	text-align: center;
+	padding: 2px 0;
+	background-color: black;
+}
+.contn h1{
+	color: #EA062B;
+}
+
+
+/* ************************************    MEDIA QURRY START     ********************************** */
+/* ************************************    For   Home   Page     ********************************** */
+/* ************************************    MEDIA QURRY START     ********************************** */
+
+@media screen and (min-width:700px) and  (max-width:899px) {
+	.banner{
+		padding-left: 100px;
+		justify-content: start;
+		height: 450px;
+	}
+	.don_process{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 300px 300px;
+		row-gap: 200px;
+		padding-bottom: 200px;
+	}
+	.register1{
+		display: flex;
+		flex-direction: column;
+	    bottom: 0px;
+	    left: 80px;
+	}
+	.secfive{
+		display: flex;
+		flex-direction: column;
+	}
+	.test_donar{
+		padding: 20px 100px;
+	}
+	.img_test{
+		width: 550px;
+		height: 450px;
+		padding-left: 50px;
+	}
+	.img_gallery{
+		width: 35%;
+		height: 320px;
+	}
+	.campaign{
+		display: inline;
+		text-align: center;
+	}
+	.iner_campaign{
+		width: 100%;
+	}
+	.we_six{
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		text-align: center;
+	}
+	.main_footer{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 300px;
+	}
+}
+@media screen and (min-width:500px) and  (max-width:699px){
+	.banner{
+		padding-left: 100px;
+		justify-content: start;
+		height: 360px;
+	}
+	.banner h1{
+		font-size: 35px;
+	}
+	.don_process{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 300px 300px;
+		row-gap: 200px;
+	}
+	.register1{
+		display: flex;
+		flex-direction: column;
+	    bottom: 0px;
+	    left: 80px;
+	}
+	.secfive{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.test_donar{
+		padding: 20px 100px;
+	}
+	.img_test{
+		width: 350px;
+		height: 350px;
+	}
+	.img_gallery{
+		width: 35%;
+		height: 220px;
+	}
+	.campaign{
+		display: inline;
+		text-align: center;
+	}
+	.iner_campaign{
+		width: 100%;
+	}
+	.we_six{
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		text-align: center;
+	}
+	.we_six h2{
+		margin: 0;
+	}
+	.main_footer{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 300px;
+	}
+}
+@media screen and (min-width:250px) and  (max-width:499px){
+	.banner{
+		padding-left: 10px;
+		justify-content: start;
+		height: 260px;
+	}
+	.banner h1{
+		font-size: 20px;
+	}
+	.banner p{
+		margin: 10px;
+	}
+	.don_process{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 300px 300px;
+		row-gap: 200px;
+	}
+	.register1{
+		display: flex;
+		flex-direction: column;
+	    bottom: 0px;
+	    left: 0px;
+		width: 100%;
+	}
+	.secfive{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.test_donar{
+		padding: 10px 20px;
+	}
+	.img_test{
+		width: 200px;
+		height: 200px;
+	}
+	.img_gallery{
+		width: 55%;
+		height: 220px;
+	}
+	.secthree{
+		padding: 1px;
+	}
+	.become-para{
+		width: 100%;
+	}
+	.iner_campaign{
+		width: 100%;
+	}
+	.we_six{
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+		gap: 0;
+		text-align: center;
+	}
+	.we_six h2{
+		margin: 0;
+	}
+	.main_footer{
+		display: grid;
+		grid-template-columns: 100%;
+		text-align: center;
+		grid-template-rows: 250px;
+	}
+}
+
+
+
+
+/********************   RUKO ZAR      About Us Page Start ***********************/
+
+
+.baner_about{
+	width: 100%;
+	height: 360px;
+	background-image: url("./image/About_baner.jpg");
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.baner_about::before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000ab;
+    z-index: -1;
+}
+.baner_about h2{
+	font-size: 48px;
+}
+
+
+
+/****************      Blood Donation  Read More Button Working    *****************/
+
+.Donation_Paragarph{
+	width: 70%;
+	margin: auto;
+	padding: 20px 0;
+}
+.Donation_Paragarph h1{
+	color: #EA062B;
+} 
+
+.Organization_Explore{
+	width: 70%;
+	margin: auto;
+	padding: 20px 0;
+}
+.Organization_Explore p,ul li{
+	font-size: 18px;
+}
+
+.Organization_Explore h2{
+	color: #EA062B;
+}
+.Organization_Explore h1{
+	color: #EA062B;
+}
+.Explore_Now{
+	width: 70%;
+	margin: auto;
+	padding: 20px 0;
+}
+.Explore_Now h2{
+	color: #EA062B;
+}
+.Explore_Now h1{
+	color: #EA062B;
+}
+.About_link:hover{
+	color: #EA062B;
+}
+
+
+
+
+
+
+/****************      Who We Are    *****************/
+
+.who_we{
+	width: 80%;
+	margin: auto;
+	padding: 70px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.who_we h2{
+	font-size: 48px;
+	color: #EA062B;
+}
+.who_we h5{
+	font-size: 24px;
+}
+
+
+
+
+
+/**********      Counter     *********/
+
+.counter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 70px;
+	background-color: #EA062B;
+	color: #fff;
+	height: 250px;
+}
+.counter span{
+	font-size: 72px;
+	font-weight: 700;
+}
+
+
+
+
+
+/****************    Welcome to Blood     *************/
+
+.help_people{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	gap: 50px;
+}
+.help_people img{
+	border-top: 10px solid #EA062B;
+	border-left: 10px solid #EA062B;
+	border-radius: 0px 20px;
+	margin: 50px 0;
+}
+.need{
+	margin: 50px 0;
+}
+.need h5{
+	color: #EA062B;
+}
+.need h2{
+	font-size: 42px;
+
+}
+.list_item{
+	display: flex;
+}
+
+
+
+
+/******************     TESTIMONIALS      *************/
+.our_team{
+	display: flex;
+	width: 87%;
+	gap: 30px;
+	margin: auto;
+}
+.our_team img{
+	width: 400px;
+	height: 450px;
+}
+
+
+.testi_service{
+	width: 70%;
+	height: auto;
+	margin: auto;
+	background-color: #EA062B;
+	color: #fff;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.testi_service h2{
+	font-size: 40px;
+	font-weight: 700;
+}
+.testi_service p{
+	margin: 0;
+}
+.testi_service img{
+	padding-top: 20px;
+}
+.sami_clon{
+	margin: 0;
+	font-size: 40px;
+	font-weight: 700;
+}
+.our_main{
+	padding: 10px 0;
+	background-color: #ece6e6;
+}
+.our_view{
+	text-align: center;
+}
+.our_view h2{
+	font-size: 42px;
+	font-weight: 700;
+}
+.our_view p{
+	color: #EA062B;
+	font-weight: bold;
+}
+
+
+
+/****************     START DONATING       ************ */
+
+.start_donte{
+	background-image: url("./image/call.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 470px;
+	position: relative;
+	z-index: 1;
+}
+.start_donte::before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000ab;
+    z-index: -1;
+}
+.start_donte2{
+	padding-top: 70px;
+}
+.start_donte3{
+	width: 75%;
+	height: 320px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 10px solid #EA062B;
+	color: #fff;
+}
+.start_donte3 h2{
+	font-size: 42px;
+	font-weight: 700;
+}
+
+
+
+
+
+/**********      Our Best Services      ************/
+
+.do-services{
+	margin: auto;
+	width: 80%;
+	display: flex;
+	gap: 80px;
+	padding: 25px 0;
+}
+.do-services h2{
+	font-size: 40px;
+	margin: 0;
+}
+.do-services h1{
+	font-size: 72px;
+	color: #E7E7E7;
+	margin: 0;
+}
+.what_we{
+	text-align: center;
+}
+.what_we p{
+	color: #EA062B;
+	font-weight: bold;
+}
+.who_we h2{
+	font-size: 42px;
+	font-weight: 700;
+}
+
+
+@media screen and (min-width:700px) and  (max-width:999px){
+	.who_we img{
+		width: 430px;
+		height: 300px;
+	}
+	.counter {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); 
+		grid-auto-rows: minmax(100px, auto); 
+		gap: 20px; 
+		justify-content: center; 
+		align-items: center; 
+		text-align: center; 
+	}
+	.our_team{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.need h2{
+		font-size: 25px;
+		margin: auto;
+	}
+	.do-services{
+		width: 100%;
+		gap: 20px;
+	}
+	.do-services img{
+		width: 400px;
+		height: 300px;
+	}
+
+/* *************** */
+
+	.Best_Donor{
+		padding: auto;
+	}
+	.f_name1{
+		padding: 20px 100px;
+	}
+	.fields{
+		padding: 20px 100px;
+	}
+
+	/* *************** */
+	.blodi_form{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+	
+}
+@media screen and (min-width:500px) and  (max-width:699px){
+	.who_we{
+		display: flex;
+		flex-direction:column;
+	}
+	.who_we img{
+		padding-top: 40px;
+	}
+	.counter {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* 2 columns */
+		grid-auto-rows: minmax(100px, auto); /* Auto rows with minimum height of 100px */
+		gap: 20px; 
+	}
+	.our_team{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.help_people{
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+	.do-services{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+	}
+	.do-services img{
+		width: 100%;
+		height: 100%;
+	}
+	.blodi_form{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width:250px) and  (max-width:499px){
+	.who_we{
+		display: flex;
+		flex-direction:column;
+	}
+	.who_we img{
+		padding-top: 40px;
+		width: 300px;
+		height: 200px;
+	}
+	.counter {
+		display: grid;
+		height: 500px;
+		grid-auto-rows: minmax(100px, auto); 
+		gap: 20px; 
+	}
+	.our_team{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.our_team img{
+		width: 100%;
+		height: 100%;
+	}
+	.help_people{
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+	.help_people img{
+		width: 300px;
+		height: 300px;
+	}
+	.start_donte3 h2{
+		font-size: 25px;
+	}
+	.do-services{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0;
+		margin: 20px;
+	}
+	.do-services img{
+		width: 100%;
+		height: 100%;
+	}
+	.blodi_form{
+		flex-direction: column;
+		padding-left: 15px !important;
+	}
+	.blodi{
+		padding: 0px !important;
+	}
+	.form_name1{
+		padding: 20px 20px !important;
+	}
+	textarea {
+		width: 100%; /* Decrease width for smaller screens */
+		min-height: 80px; /* Decrease minimum height for smaller screens */
+	}
+	.submit_req{
+		padding: 2px 100px !important;
+		margin-bottom: 7px;
+	}
+	
+}
+
+
+
+/*************************    CONTACT US PAGE START     *********************/
+
+.blodi{
+	padding: 40px;
+}
+.blodi_form{
+	display: flex;
+	width: 70%;
+	height: 35%;
+	margin: auto;
+	padding: 60px;
+	box-shadow: 0px 13px 38px 0px rgba(28, 28, 28, 0.15);
+}
+.blodi_form input{
+	margin: 14px;
+}
+.form_contact{
+	width: 70%;
+}
+.form_contact textarea{
+	margin-left: 10px;
+}
+.form_contact h2{
+	color: #EA062B;
+}
+.submit_req{
+	margin-top: 10px;
+	padding: 11px 72px
+}
+.form_sidebr{
+	width: 100%;
+	height: 470px;
+	padding: 20px;
+	background-color: #EA062B;
+	color: #fff;
+}
+.form_sidebr h2{
+	font-size: 27px;
+}
+.form_name1{
+	padding: 12px 60px;
+}
+
+
+
+
+.social_icon{
+	width: 70%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.social_icon button{
+	margin-left: 90px;
+	margin-bottom: 50px;
+}
+
+.icons{
+	margin: 10px 0 30px 30px;
+}
+
+
+
+
+
+
+
+
+/********************       DONATE  BLOOD PAGE START       **************/
+
+
+.make_donatate{
+	margin: 50px 0;
+}
+.make_donatate h2{
+	font-size: 42px;
+	text-align: center;
+	color: #EA062B;
+}
+.blood_group{
+	width: 45%;
+	height: 150px;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid;
+}
+#cars{
+	width: 530px;
+	padding: 16px;
+}
+
+
+
+.fd_main{
+	margin-bottom: 40px;
+}
+.fd_main input{
+	margin: 14px;
+}
+.form_donate{
+	width: 37%;
+	padding: 20px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.feedBack{
+	width: 100%;
+	padding: 20px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form_donate button{
+	margin: 10px 0 0 10px;
+	padding: 10px 14px;
+}
+.form_donate textarea{
+	margin-left: 10px;
+}
+.form_donate label{
+	font-weight:500;
+}
+.form_donate h2{
+	color: #EA062B;
+}
+
+.team_form{
+	padding: 20px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.joinUs_team{
+	width: 400px;
+	padding: 20px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.joinUs{
+	color: #EA062B;
+	text-align: center;
+}
+
+.fields{
+	padding: 8px 70px;
+}
+.fieldsForm{
+	width: 94%;
+	height: 34px;
+}
+.fields_team{
+	padding: 14px 105px;
+}
+
+.Best_Donor{
+	width: 550px;
+	height: 200px;
+}
+.Donor_aa{
+	text-align: center;
+}
+.f_name1{
+	padding: 14px 40px;
+}
+
+
+
+
+
+.modal, .overlay{
+	width: 500px;
+	height: 90%;
+	position: relative;
+	top: 40px;
+	left: 500px;
+	right: 0;
+	bottom: 50px;
+	position: fixed;
+	background-color: #ea062c6f;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	
+}
+body.active-modal{
+	overflow-y: hidden;
+}
+.submit_btn{
+	margin-right: 20px;
+}
+.modal{
+	background-color: #000000b6;
+}
+
+
+
+
+
+
+
+
+
+
+/* *******************************     login animation Us     ******************************** */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  box-sizing: border-box;
+}
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+section 
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #000;
+}
+section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,#EA062B,#000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+section span 
+{
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+section span:hover 
+{
+  background: #EA062B;
+  transition: 0s;
+}
+
+section .signin
+{
+  position: absolute;
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signin .content h2 
+{
+  font-size: 2em;
+  color: #EA062B;
+  text-transform: uppercase;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #EA062B;
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: #EA062B;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+@media (max-width: 900px)
+{
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+.loginContainer{
+	width: 100%;
+	height: 100%;
+}
